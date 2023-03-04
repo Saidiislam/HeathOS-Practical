@@ -5,6 +5,8 @@ import Registation from "../pages/Auth/Registation";
 import Private from "../pages/Auth/Private";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import ProductPage from "../pages/ProductPage";
+import OrderPage from "../pages/OrderPage";
+import CustomerPage from "../pages/CustomerPage";
 
 export default function MainRouter() {
   return createBrowserRouter([
@@ -31,6 +33,16 @@ export default function MainRouter() {
     {
       path: "/dashboard",
       element: <Dashboard />,
+      errorElement: <Error />,
+    },
+    {
+      path: "/orders",
+      element: <OrderPage />,
+      errorElement: <Error />,
+    },
+    {
+      path: "/customers",
+      element: <CustomerPage />,
       errorElement: <Error />,
     },
   ]);
