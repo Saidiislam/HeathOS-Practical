@@ -3,7 +3,6 @@ import {
     Container,
     ContentBox,
     DashboardHeader,
-    DataCard
   } from "../../Components"
 import { pb } from '../../lib/pocketbase';
 
@@ -22,11 +21,11 @@ const Dashboard = () => {
     <section className=''>
       <Container>
         <ContentBox>
-            <DashboardHeader name={user.username} />
+            {/* <DashboardHeader name={user.username} />
             <DataCard price={user.pview}/>
             <DataCard />
             <DataCard />
-            <DataCard />
+            <DataCard /> */}
         </ContentBox>
       </Container>
     </section>
