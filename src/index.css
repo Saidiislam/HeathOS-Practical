@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+  /* === Track === */
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,var(--primary-btn),var(--primary-btn) 1px,var(--primary-btn) 0,var(--primary-btn));
+}
+
+  /* === Handle === */
+::-webkit-scrollbar-thumb {
+
+    /* background: #434343; */
+    background: var(--card-color);
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+  /* === Handle on hover === */
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer; 
+}
+:root {
+    /* Color Theme Swatches in Hex */
+    --font: 'Poppins', sans-serif;
+    --background: #F6F6F6;
+    --text: #242526;
+    --border: 1px solid #474a4d;
+    --bg-accent: #484a4d;
+    --slate-white: #d3d3d3;
+    --text-color: #dadce1;
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --speed: 500ms; 
+    --white: #F2F2F2;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font);
+}
+
+h2 {
+    font-size: 24px;
+}
+p {
+    font-weight: 400;
+}
+
+button {
+    font-weight: 500;
+    font-size: 15px;
+    border: 0.5px solid #bdbbbb;
+    border-radius: 5px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    
+}
+::selection {
+    background-color: var(--text);
+    color: var(--background);
+}
