@@ -1,9 +1,9 @@
 import React from "react";
-import { useQuery } from "react-query";
+import { useQuery, useMutation } from "react-query";
 import { List, Warning } from "../Components";
 import ItemList from "../Components/ItemList/ItemList";
 import Structure from "../Components/Structure/Structure";
-import { url } from "../lib/apiConfig";
+import { postX, url } from "../lib/apiConfig";
 import Avatar from "../assets/avatar.png";
 
 const CustomerPage = () => {
@@ -11,11 +11,6 @@ const CustomerPage = () => {
     ["customers"],
     async () => await fetch(`${url}customers/records`).then((res) => res.json())
   );
-
-  
-
-
-  console.log(customerQuery.data);
 
   return (
     <Structure>

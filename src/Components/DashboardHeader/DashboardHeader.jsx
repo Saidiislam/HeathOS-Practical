@@ -14,6 +14,7 @@ export const DashboardHeader = ({ name }) => {
                 <h2 className="font-light	">Welcome <span className="font-bold">{name}</span>👋🏼</h2>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                
               </div>
             </div>
           </li>
